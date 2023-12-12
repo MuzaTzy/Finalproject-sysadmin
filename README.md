@@ -146,7 +146,7 @@ lakukan konfigurasi, aktifkan write enable dengan cara meghapus tagar kemudian s
    systemctl restart vsftpd
 ```
 
--buka file zila lalu koneksikan ftp dan coba upload file
+- buka file zila lalu koneksikan ftp dan coba upload file
 ![5](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/657d4b02-f3be-41fc-aea5-2455c8f3ec9d)
 
 - restart apache 2 dan running di web browser
