@@ -99,8 +99,56 @@ set password untuk mysql
 http://192.168.13.3/phpmyadmin
 ![lasr](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/7073c518-ef34-4b4a-9112-d85060eb3d9f)
 
-# Install ftp
-- 
+# Instalasi FTP
+
+- instal ftp
+```bash
+   apt install vsftpd
+```
+
+- mengaktifkan port FTP
+untuk perizinan komunikasi , ftp menggunakan port 21, setelah itu pastikan bahwa rule nya sudah berhasil
+```bash
+   ufw allow 21
+   ufw status
+```
+
+- buat folder untuk user dan berikan izin
+```bash
+   mkdir /home/muza/ftp
+   chown nobody:nogroup /home/ftpuser/ftp/
+   chmod 777 /home/muza/ftp
+
+```
+
+- Cek status ftp
+```bash
+   systemctl status vsftpd
+```
+
+- Buat user ftp
+```bash
+   adduser muza
+```
+set password untuk menghubungkan ftp
+
+- konfigurasi agar bisa mengupload file dari luar ke server 
+```bash
+   nano /etc/vsftpd.conf
+```
+lakukan konfigurasi, aktifkan write enable dengan cara meghapus tagar kemudian save
+
+- restart ftp
+```bash
+   systemctl restart vsftpd
+```
+
+-buka file zila lalu koneksikan ftp dan coba upload file
+![5](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/657d4b02-f3be-41fc-aea5-2455c8f3ec9d)
+
+- restart apache 2 dan running di web browser
+![hasil](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/315dd8ad-4226-4ea0-81ba-b27c03da18cf)
+
 
 
 
