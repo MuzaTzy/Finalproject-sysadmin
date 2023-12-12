@@ -8,6 +8,51 @@ Nim : 22.83.0883
 3. menambahkan service ssh , dhcp, dan dns
 4. os yang di gunakan linux ubuntu 22.04 lts
 
+#Install apache
+```bash
+   apt install apache2
+```
+
+#periksa status apache
+pastikan apache telah aktif
+```bash
+   apt install apache2
+```
+
+#Ubah pemilik folder “/var/www/html” dari root ke www-data
+```bash
+   sudo chown -R www-data:www-data /var/www/html
+```
+
+#Melakukan perizinan
+Beri ijin anggota grup untuk merubah folder “/var/www/html”
+```bash
+   sudo chmod -R g+rw /var/www/html
+```
+
+#Membuat user
+buat user anggota untuk bisa mengakses data
+```bash
+   sudo usermod -a -G www-data muza
+```
+
+#Membuat user
+buat user anggota untuk bisa mengakses data
+```bash
+   sudo usermod -a -G www-data muza
+```
+#izinkan rule untuk apache di firewall
+izinkan rule apache dan melihat status rule apache
+```bash
+   ufw allow apache
+   ufw status
+```
+
+#pengetesan apache
+apache telah di instal , lakukan pengecekan menggunakan web browser , ketikkan IP
+![apache2](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/a4812eb5-17c1-4bd2-aa17-3f582a2b1c41)
+
+
 #Install phpmyadmin
 ```bash
    apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
