@@ -91,10 +91,12 @@ set password untuk mysql
    mysql)ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY   'password';
    exit
 ```
+
 - Restart apache
 ```bash
    Systemctl restart apache2
 ```
+
 - Uji Coba phpmyadmin
 http://192.168.13.3/phpmyadmin
 ![lasr](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/7073c518-ef34-4b4a-9112-d85060eb3d9f)
