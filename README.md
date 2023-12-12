@@ -8,35 +8,36 @@ Nim : 22.83.0883
 3. menambahkan service ssh , dhcp, dan dns
 4. os yang di gunakan linux ubuntu 22.04 lts
 
-#==Install phpmyadmin==
+#Install phpmyadmin
 ```bash
    apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
 ```
-jika gagal saat proses install maka disabled komponen
+pilih apache2 menggunakan
+![2](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/c65276f0-05e1-4155-837c-b3aa32edd64f)
 
-Masu ke dalam mysql
-#mysql
- mysql)UNINSTALL COMPONENT "file://component_validate_password";
- mysql)exit
+konfigurasi database common , pilih yes
+![3](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/7a4f980c-f726-4c39-a0c5-b52538b71303)
 
-Melanjutkan proses installasi phpmyadmin
-#apt install phpmyadmin
+set password untuk mysql
+![4](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/a8d3f9bc-8463-4a63-a61f-7f2dd10c2f81)
 
-Jika sudah berhasil proses install jangan lupa enabled komponen
-#mysql
- mysql)INSTALL COMPONENT "file://component_validate_password";
- mysql)exit
-#phpenmod mbstring
-#systemctl restart apache2
+#mengonfigurasi akses kata sandi untuk akun root Mysql
+```bash
+   mysql
+   mysql)ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY   'password';
+   exit
+```
+#Restart apache
+```bash
+   Systemctl restart apache2
+```
+#Uji Coba phpmyadmin
+http://192.168.13.3/phpmyadmin
+![lasr](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/7073c518-ef34-4b4a-9112-d85060eb3d9f)
 
-Mengonfigurasi Akses Kata Sandi untuk Akun Root MySQL
-#mysql
- mysql)ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'password';
-atau jika gagal bisa menggunakan cara lain sbb
- mysql)ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
- mysql)exit
 
-Uji Coba phpmyadmin
-http://your_domain_or_IP/phpmyadmin
+
+
+
 
 
