@@ -152,6 +152,36 @@ lakukan konfigurasi, aktifkan write enable dengan cara meghapus tagar kemudian s
 - restart apache 2 dan running di web browser
 ![hasil](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/315dd8ad-4226-4ea0-81ba-b27c03da18cf)
 
+# Instalasi SSH
+
+- instal ssh
+```bash
+   apt install openssh-server
+```
+
+- Cek status ssh
+```bash
+   systemctl status sshd
+```
+
+- kofigurasi ssh
+lakukan konfigurasi ssh dengan perintah nano /etc/ssh/sshd_conf tambahkan permitrootlogin yes
+```bash
+   nano /etc/ssh/sshd_conf
+```
+![ssh](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/e71f962d-5466-4460-80a6-6139eb5d3d0f)
+
+- Restart SSH
+```bash
+   systemctl restart sshd
+```
+
+- Coba login menggunakan CMD windows
+```bash
+   ssh root@192.168.13.3
+```
+![ssh hasil](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/2bbb7666-b92c-4439-8f65-7b1d16fbd64d)
+
 
 
 
