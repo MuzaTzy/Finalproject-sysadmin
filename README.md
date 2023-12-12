@@ -77,13 +77,13 @@ apache telah di instal , lakukan pengecekan menggunakan web browser , ketikkan I
    apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
 ```
 
-1. pilih apache2 menggunakan
+- pilih apache2 menggunakan
 ![2](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/c65276f0-05e1-4155-837c-b3aa32edd64f)
 
-2. konfigurasi database common , pilih yes
+- konfigurasi database common , pilih yes
 ![3](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/7a4f980c-f726-4c39-a0c5-b52538b71303)
 
-3. set password untuk mysql
+- set password untuk mysql
 ![4](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/a8d3f9bc-8463-4a63-a61f-7f2dd10c2f81)
 
 - mengonfigurasi akses kata sandi untuk akun root Mysql
