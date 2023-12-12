@@ -8,7 +8,7 @@ Nim : 22.83.0883
 3. menambahkan service ssh , dhcp, dan dns
 4. os yang di gunakan linux ubuntu 22.04 lts
 
-- Install apache
+# Install apache
 ```bash
    apt install apache2
 ```
