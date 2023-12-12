@@ -5,10 +5,11 @@ Nim : 22.83.0883
 
 1. Membuat web server menggunakan uamp
 2. linux untuk sistem operasinya , apache sebagai software web server ,  mysql server sebagai database dan php sebagi pemrograman dinamisnya
-3. menambahkan service ssh , dhcp, dan dns
+3. menambahkan service ssh dan ftp
 4. os yang di gunakan linux ubuntu 22.04 lts
 
 # Install apache
+- instal apache 2 
 ```bash
    apt install apache2
 ```
@@ -52,6 +53,24 @@ izinkan rule apache dan melihat status rule apache
 apache telah di instal , lakukan pengecekan menggunakan web browser , ketikkan IP
 ![apache2](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/a4812eb5-17c1-4bd2-aa17-3f582a2b1c41)
 
+# Install Mysql
+- instal mysql-server 
+```bash
+   apt install mysql-server
+```
+- Jalankan skrip keamanan untuk meningkatkan keamanan database
+```bash
+   mysql_secure_installation
+```
+- Cek status MySQL
+```bash
+   service mysql status
+```
+
+# Install PHP
+```bash
+   apt install php libapache2-mod-php php-mysql
+```
 
 # Install phpmyadmin
 ```bash
@@ -80,6 +99,8 @@ set password untuk mysql
 http://192.168.13.3/phpmyadmin
 ![lasr](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/7073c518-ef34-4b4a-9112-d85060eb3d9f)
 
+# Install ftp
+- 
 
 
 
