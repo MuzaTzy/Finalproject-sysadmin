@@ -17,7 +17,7 @@ Nim : 22.83.0883
 - periksa status apache
 pastikan apache telah aktif
 ```bash
-   apt install apache2
+   systemctl restart apache2
 ```
 
 - Ubah pemilik folder “/var/www/html” dari root ke www-data
