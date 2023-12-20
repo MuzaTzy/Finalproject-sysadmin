@@ -180,8 +180,6 @@ lakukan konfigurasi ssh dengan perintah nano /etc/ssh/sshd_conf tambahkan permit
 ```bash
    ssh root@192.168.13.3
 ```
-![image](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/a9b81bf5-3340-4a44-b30c-51394c359d62)
-
 
 
 
