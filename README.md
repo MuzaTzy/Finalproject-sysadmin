@@ -150,7 +150,8 @@ lakukan konfigurasi, aktifkan write enable dengan cara meghapus tagar kemudian s
 ![5](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/657d4b02-f3be-41fc-aea5-2455c8f3ec9d)
 
 - restart apache 2 dan running di web browser
-![hasil](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/315dd8ad-4226-4ea0-81ba-b27c03da18cf)
+![image](https://github.com/MuzaTzy/Finalproject-sysadmin/assets/144196362/c5e03b5b-7c6b-4c74-b371-c651c8c0f2cc)
+
 
 # Instalasi SSH
 
